@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Rock Crystal Shop</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #66ccff, #ff99cc, #6699ff);
+            min-height: 100vh;
+            position: relative;
+        }
+        .wave-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 33vh;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Vector%202-WiUJj1RF4BMKr1N7FPvMpzsUIBRDcY.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            z-index: 0;
+        }
+        header {
+            background-color: transparent;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .logo {
+            height: 2rem;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .hero-content {
+            flex: 1;
+            color: white;
+        }
+        .hero-image {
+            flex: 1;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: white;
+            color: #3b82f6;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e5e7eb;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .product-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .best-price {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .best-price-content {
+            flex: 2;
+        }
+        .best-price-image {
+            flex: 1;
+        }
+        footer {
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rectangle%20235-AUAgNrfReILNrXQcgPZiOsUhKzP69W.png');
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wave-bg"></div>
+    <header>
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Group%20110-CkLtb2azYu2kAqSVlascQ6koOeXEeY.png" alt="Pop Rock Crystal Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Pop Rock Crystal Shop!</h1>
+                <p>Here you will find unique phone accessories, crystals, jewelry and more. Free shipping inside the U.S. and our phone grips come with a limited warranty. Enjoy!</p>
+                <button class="btn">SHOP NOW</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1%202-Fsit65qhuIxBHIbu2trh1R1ybqKBlh.png" alt="Crystal Agate Phone Grip" style="width: 100%; height: auto;">
+                <p>CRYSTAL AGATE PHONE GRIP - 18.99$</p>
+            </div>
+        </section>
+
+        <h2 style="color: white;">All Products</h2>
+        <div class="products" id="productGrid"></div>
+        <div style="text-align: center;">
+            <button class="btn">View All</button>
+        </div>
+
+        <section class="best-price">
+            <div class="best-price-content">
+                <h2>BEST PRICE</h2>
+                <h3>Agate Phone Grip</h3>
+                <p><span style="text-decoration: line-through;">44.50$</span> <span style="color: red; font-weight: bold;">19.50$</span></p>
+                <p>These Pop Rock Crystal grip tops can be swapped with other tops depending on your mood, outfit, nails, phone case, holiday, etc! Just gently squeeze the sides to remove and swap!</p>
+                <button class="btn" style="background-color: #3b82f6; color: white;">BUY NOW</button>
+            </div>
+            <div class="best-price-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1%202-Fsit65qhuIxBHIbu2trh1R1ybqKBlh.png" alt="Agate Phone Grip" style="width: 100%; height: auto;">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Pop Rock Crystal Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const products = Array(8).fill({
+            name: "CRYSTAL AGATE PHONE GRIP",
+            price: 18.99,
+            image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1%202-Fsit65qhuIxBHIbu2trh1R1ybqKBlh.png"
+        });
+
+        const productGrid = document.getElementById('productGrid');
+
+        products.forEach((product, index) => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>${product.price.toFixed(2)}$</p>
+                <button class="btn" style="${index === 0 ? 'background-color: #3b82f6; color: white;' : ''}">BUY NOW</button>
+            `;
+            productGrid.appendChild(productCard);
+        });
+    </script>
+</body>
+</html>
